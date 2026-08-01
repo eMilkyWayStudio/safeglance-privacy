@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -6,7 +6,7 @@
     <meta name="color-scheme" content="light dark" />
     <meta
       name="description"
-      content="Privacy Policy for the SafeGlance Android application."
+      content="Privacy Policy for the SafeGlance Android photo and video gallery."
     />
     <title>Privacy Policy — SafeGlance</title>
     <style>
@@ -28,13 +28,17 @@
         box-sizing: border-box;
       }
 
+      html {
+        scroll-behavior: smooth;
+      }
+
       body {
         margin: 0;
         padding: 32px 16px;
       }
 
       main {
-        width: min(880px, 100%);
+        width: min(900px, 100%);
         margin: 0 auto;
         padding: 40px;
         background: #ffffff;
@@ -52,8 +56,29 @@
       h1 {
         margin-top: 0;
       }
+
       h2 {
         margin-top: 2rem;
+      }
+
+      a {
+        color: #315ab7;
+        overflow-wrap: anywhere;
+      }
+
+      .language-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 28px;
+      }
+
+      .language-nav a {
+        padding: 7px 12px;
+        border: 1px solid #cbd5e8;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: 600;
       }
 
       .meta,
@@ -69,19 +94,16 @@
       }
 
       hr {
-        margin: 40px 0;
+        margin: 48px 0;
         border: 0;
         border-top: 1px solid #dde3ef;
-      }
-
-      a {
-        color: #315ab7;
       }
 
       @media (max-width: 640px) {
         body {
           padding: 0;
         }
+
         main {
           padding: 24px 18px;
           border: 0;
@@ -106,306 +128,384 @@
         h2 {
           color: #f4f7ff;
         }
+
         .meta,
         .note {
           color: #aeb8cc;
         }
+
         .summary {
           background: #1b2947;
           border-left-color: #84a7ff;
         }
+
         a {
           color: #9bb8ff;
         }
+
+        .language-nav a,
         hr {
-          border-top-color: #2a354a;
+          border-color: #2a354a;
         }
       }
     </style>
   </head>
   <body>
     <main>
-      <section lang="en">
+      <nav class="language-nav" aria-label="Policy languages">
+        <a href="#english" lang="en">English</a>
+        <a href="#russian" lang="ru">Русский</a>
+      </nav>
+
+      <section id="english" lang="en">
         <h1>Privacy Policy for SafeGlance</h1>
         <p class="meta">
-          <strong>Developer:</strong> eMilkyWay<br />
-          <strong>Effective date:</strong> July 12, 2026<br />
-          <strong>Last updated:</strong> July 12, 2026
+          <strong>Developer:</strong> eMilkyWay Studio<br />
+          <strong>Effective date:</strong> August 1, 2026<br />
+          <strong>Last updated:</strong> August 1, 2026
         </p>
 
         <p class="summary">
-          SafeGlance is a local Android gallery application. It does not create
-          user accounts, upload photos, display advertising, use analytics, or
-          transmit user data to the developer or third parties.
+          SafeGlance is a local photo and video gallery. Your media and private
+          gallery metadata stay on your device and are not uploaded. SafeGlance
+          uses Google AdMob for advertising and Google User Messaging Platform
+          (UMP) for consent and privacy choices.
         </p>
 
-        <h2>1. Scope</h2>
+        <h2>1. Scope and service</h2>
         <p>
-          This Privacy Policy applies to the SafeGlance Android application
-          (package name: <code>com.emilkyway.safeglance</code>).
+          This policy applies to SafeGlance, an Android app for local galleries,
+          albums, favorites, hidden-item organization, media viewing and deletion,
+          and Public Show. SafeGlance has no accounts, developer-operated backend,
+          cloud sync, media upload, Firebase Analytics, advertising mediation, or
+          ad networks other than Google AdMob.
         </p>
 
-        <h2>2. Photos and media information accessed by the app</h2>
+        <h2>2. Local photos, videos, and access</h2>
         <p>
-          With the user's permission, SafeGlance accesses photos stored on the
-          user's device and related media information needed to provide gallery
-          features. This may include a photo's device-local identifier, content
-          URI, file name, date added or modified, file size, dimensions, and
-          album name or identifier.
-        </p>
-        <p>
-          This access is used only to display and organize the local gallery,
-          open photos, show albums, mark items as favorites, hide items inside
-          SafeGlance, display photo information, move a photo to the system
-          trash after user confirmation, and provide Public Show mode.
-        </p>
-        <p>
-          Photos and their media information are processed locally on the user's
-          device. SafeGlance does not upload them to any server.
+          With your permission, SafeGlance accesses photos, videos, or only
+          selected items on your device. Media and details needed to organize it,
+          including file and album details, dates, dimensions, size, and video
+          duration, are processed locally. SafeGlance does not upload or stream
+          your media.
         </p>
 
-        <h2>3. Information stored locally by SafeGlance</h2>
+        <h2>3. Media and biometric data are not transmitted</h2>
         <p>
-          SafeGlance stores a limited amount of application data in the app's
-          private local storage:
+          SafeGlance does not send your photos, videos, file names, album names,
+          favorite or hidden state, search queries, or biometric data to
+          eMilkyWay Studio, Google, advertisers, or other third parties. These
+          details are not used in ad requests or ad targeting.
         </p>
+        <p>
+          Android performs owner verification. SafeGlance receives only the
+          result, not biometric templates, PINs, patterns, or passwords.
+        </p>
+
+        <h2>4. Information stored locally</h2>
+        <p>
+          Favorite and hidden status, related gallery metadata, theme, onboarding,
+          and Public Show settings stay in private local app storage. Hidden
+          status is not file encryption. UMP manages consent information and
+          communicates with Google when updating it.
+        </p>
+
+        <h2>5. Google AdMob and Google UMP</h2>
+        <p>
+          SafeGlance uses the Google Mobile Ads SDK for AdMob and UMP for consent.
+          The gallery remains usable without consent, network access, or a loaded
+          ad.
+        </p>
+        <p>The Google Mobile Ads SDK may automatically collect and send Google:</p>
         <ul>
-          <li>media identifiers and local content URIs;</li>
-          <li>favorite and hidden status;</li>
-          <li>timestamps related to those local settings;</li>
+          <li>IP address and approximate general location;</li>
+          <li>app and ad interactions;</li>
+          <li>diagnostic information; and</li>
+          <li>device and account identifiers.</li>
+        </ul>
+        <p>
+          Google may use this data for advertising, analytics, measurement,
+          service delivery, and fraud prevention. It does not include your local
+          media or private gallery metadata. eMilkyWay Studio has no analytics
+          system of its own.
+        </p>
+
+        <h2>6. Consent, personalization, and privacy choices</h2>
+        <p>
+          Ad personalization depends on consent, region, age category, Google
+          account and device settings, and law. SafeGlance updates UMP consent at
+          startup and requests ads only when UMP permits it. Non-personalized or
+          limited ads may still use limited data for delivery, measurement,
+          security, and fraud prevention.
+        </p>
+        <p>
+          When UMP requires it, you can change or withdraw your choices through
+          <strong>Settings → Privacy → Privacy choices</strong> in SafeGlance.
+          You can also use Android's Ads settings and
+          <a href="https://myadcenter.google.com/">Google My Ad Center</a>.
+        </p>
+
+        <h2>7. Google information and third parties</h2>
+        <p>Learn more about Google's data practices and controls:</p>
+        <ul>
           <li>
-            app preferences, such as onboarding status, theme, language, and
-            Public Show settings.
+            <a href="https://policies.google.com/technologies/partner-sites?hl=en-US"
+              >How Google uses information from sites or apps that use its services</a
+            >;
+          </li>
+          <li>
+            <a href="https://policies.google.com/privacy?hl=en-US"
+              >Google Privacy Policy</a
+            >;
+          </li>
+          <li>
+            <a href="https://policies.google.com/technologies/ads?hl=en-US"
+              >Google Advertising</a
+            >; and
+          </li>
+          <li>
+            <a href="https://myadcenter.google.com/">Google My Ad Center</a>.
           </li>
         </ul>
         <p>
-          This information remains on the user's device and is not sent to the
-          developer or to third parties.
+          Google handles advertising data under its policies. SafeGlance uses no
+          other ad networks and gives advertisers no local media or private
+          gallery metadata.
         </p>
 
-        <h2>4. No collection, transmission, sale, or sharing</h2>
+        <h2>8. Security</h2>
         <p>
-          SafeGlance does not collect or transmit personal data off the user's
-          device. The app does not use a backend server, cloud synchronization,
-          advertising SDKs, analytics SDKs, tracking technologies, or an account
-          system. The developer does not sell or share user data.
+          SafeGlance keeps its gallery metadata in private app storage. Data sent
+          by the Google Mobile Ads SDK and UMP is encrypted in transit using TLS.
+          No storage or transmission method can be guaranteed completely secure.
         </p>
 
-        <h2>5. Biometric authentication and device credentials</h2>
+        <h2>9. Retention and deletion</h2>
         <p>
-          SafeGlance can ask Android to verify the device owner before opening
-          protected areas or ending Public Show mode. Authentication is
-          performed by the Android system using the device's supported biometric
-          method or device credential, such as a fingerprint, face, PIN,
-          pattern, or password.
+          Clearing SafeGlance storage or uninstalling removes favorites, hidden
+          metadata, theme, onboarding, Public Show settings, and local consent
+          state, but not original photos or videos. Media is deleted only when
+          you choose and confirm Android's request.
         </p>
         <p>
-          SafeGlance receives only the authentication result. It does not
-          receive, access, store, or transmit biometric templates, fingerprint
-          images, facial images, PINs, patterns, or device passwords.
-        </p>
-
-        <h2>6. Android permissions</h2>
-        <p>
-          Depending on the Android version, SafeGlance may request permission to
-          access all photos, selected photos, or legacy external storage. These
-          permissions are used only for the gallery features described in this
-          policy. Users can deny or revoke permissions through Android settings.
+          Google determines retention of advertising data under its policies,
+          including
+          <a href="https://policies.google.com/technologies/retention?hl=en-US"
+            >How Google retains data</a
+          >. Clearing SafeGlance storage does not delete data held by Google;
+          use the applicable Google account, Android Ads, and My Ad Center
+          controls.
         </p>
 
-        <h2>7. Hidden items</h2>
+        <h2>10. Children and target audience</h2>
         <p>
-          Marking a photo as hidden removes it from the normal SafeGlance
-          gallery views. The photo is not encrypted, moved into a private vault,
-          or hidden from other applications or the Android system.
-        </p>
-
-        <h2>8. Data retention and deletion</h2>
-        <p>
-          Local SafeGlance settings and metadata are retained until the user
-          clears the app's storage or uninstalls the app. Clearing app storage
-          or uninstalling SafeGlance removes this app-specific local data.
+          SafeGlance is not intended for children under 13. The target audience
+          declared in Google Play Console includes ages 13–15, 16–17, and 18 and
+          older. The app therefore includes teenagers aged 13–17 and adults in
+          its intended audience; it is not intended exclusively for adults.
         </p>
         <p>
-          Clearing app data or uninstalling SafeGlance does not delete the
-          user's original photos. A photo is removed only when the user
-          explicitly chooses the delete action and confirms the Android system
-          request. Depending on the Android version and device, the photo may
-          first be moved to the system trash.
-        </p>
-
-        <h2>9. Security</h2>
-        <p>
-          SafeGlance keeps its app-specific data in Android's application
-          storage and does not transmit user photos or app data over the
-          internet. Users remain responsible for the security of their device,
-          Android account, screen lock, backups, and other applications that may
-          have access to the same photos.
-        </p>
-
-        <h2>10. Children's privacy</h2>
-        <p>
-          SafeGlance is a general-purpose gallery application and does not
-          knowingly collect personal data from children or adults.
+          Advertising consent and age-restricted treatment for teenagers may
+          vary by country and applicable age-of-consent rules. Google account,
+          Family Link, device, UMP, and publisher settings may apply additional
+          protections. SafeGlance does not knowingly use local media, private
+          gallery metadata, or biometric data for advertising to teenagers or
+          adults. A parent or guardian with a privacy question may contact the
+          developer using the address below.
         </p>
 
         <h2>11. Changes to this policy</h2>
         <p>
-          This policy may be updated if SafeGlance's features or data practices
-          change. The updated version will be published on this page with a
-          revised “Last updated” date.
+          This policy may change with SafeGlance's features, obligations, or data
+          practices. Updates will appear here with a revised date; material
+          changes may also be announced in the app or store listing.
         </p>
 
         <h2>12. Contact</h2>
         <p>
-          For privacy questions, contact:
-          <a href="mailto:mirasayon.dev@gmail.com">mirasayon.dev@gmail.com</a>
+          For privacy questions or requests, contact eMilkyWay Studio at
+          <a href="mailto:mirasayon.dev@gmail.com">mirasayon.dev@gmail.com</a>.
         </p>
       </section>
 
       <hr />
 
-      <section lang="ru">
+      <section id="russian" lang="ru">
         <h1>Политика конфиденциальности SafeGlance</h1>
         <p class="meta">
-          <strong>Разработчик:</strong> eMilkyWay<br />
-          <strong>Дата вступления в силу:</strong> 12 июля 2026 года<br />
-          <strong>Последнее обновление:</strong> 12 июля 2026 года
+          <strong>Разработчик:</strong> eMilkyWay Studio<br />
+          <strong>Дата вступления в силу:</strong> 1 августа 2026 года<br />
+          <strong>Последнее обновление:</strong> 1 августа 2026 года
         </p>
 
         <p class="summary">
-          SafeGlance — локальное Android-приложение-галерея. Оно не создаёт
-          учётные записи, не загружает фотографии, не показывает рекламу, не
-          использует аналитику и не передаёт данные пользователя разработчику
-          или третьим лицам.
+          SafeGlance — локальная галерея фотографий и видео. Ваши медиафайлы и
+          приватные метаданные галереи остаются на устройстве и не загружаются.
+          SafeGlance использует Google AdMob для рекламы и Google User Messaging
+          Platform (UMP) для согласия и настроек конфиденциальности.
         </p>
 
-        <h2>1. Область действия</h2>
+        <h2>1. Область действия и функции</h2>
         <p>
-          Настоящая Политика конфиденциальности применяется к Android-приложению
-          SafeGlance (имя пакета: <code>com.emilkyway.safeglance</code>).
+          Эта политика относится к SafeGlance — Android-приложению для локальных
+          галерей, альбомов, избранного, скрытых элементов, просмотра, удаления и
+          «Публичного показа». В SafeGlance нет учётных записей, собственного
+          backend, облачной синхронизации, загрузки медиафайлов, Firebase
+          Analytics, рекламной медиации или рекламных сетей, кроме Google AdMob.
         </p>
 
-        <h2>2. Фотографии и сведения о медиафайлах</h2>
+        <h2>2. Локальные фото, видео и доступ</h2>
         <p>
-          С разрешения пользователя SafeGlance получает доступ к фотографиям на
-          устройстве и к связанным с ними сведениям, необходимым для работы
-          галереи. К таким сведениям могут относиться локальный идентификатор
-          фотографии, URI содержимого, имя файла, дата добавления или изменения,
-          размер файла, разрешение изображения, название и идентификатор
-          альбома.
-        </p>
-        <p>
-          Доступ используется только для отображения и организации локальной
-          галереи, просмотра фотографий и альбомов, добавления в избранное,
-          скрытия внутри SafeGlance, показа сведений о фото, перемещения фото в
-          системную корзину после подтверждения пользователя и работы режима
-          «Публичный показ».
-        </p>
-        <p>
-          Фотографии и сведения о них обрабатываются только на устройстве
-          пользователя. SafeGlance не загружает их на сервер.
+          С вашего разрешения SafeGlance получает доступ к фото, видео или только
+          выбранным элементам на устройстве. Медиафайлы и нужные для их
+          организации сведения, включая данные о файле и альбоме, даты,
+          разрешение, размер и длительность видео, обрабатываются локально.
+          SafeGlance не загружает и не транслирует ваши медиафайлы.
         </p>
 
-        <h2>3. Данные, которые SafeGlance хранит локально</h2>
+        <h2>3. Медиафайлы и биометрические данные не передаются</h2>
         <p>
-          SafeGlance хранит небольшой объём данных во внутреннем хранилище
-          приложения:
+          SafeGlance не отправляет фотографии, видео, имена файлов и альбомов,
+          статусы избранного и скрытого, поисковые запросы или биометрические
+          данные eMilkyWay Studio, Google, рекламодателям либо другим третьим
+          лицам. Эти сведения не используются в рекламных запросах или
+          таргетинге.
         </p>
+        <p>
+          Проверку владельца выполняет Android. SafeGlance получает только
+          результат, а не биометрические шаблоны, PIN-коды, графические ключи или
+          пароли.
+        </p>
+
+        <h2>4. Локально хранящиеся сведения</h2>
+        <p>
+          Статусы избранного и скрытого, связанные метаданные галереи, тема,
+          вступление и настройки «Публичного показа» остаются во внутреннем
+          хранилище приложения. Скрытый статус не шифрует файл. UMP управляет
+          сведениями о согласии и обменивается данными с Google при их обновлении.
+        </p>
+
+        <h2>5. Google AdMob и Google UMP</h2>
+        <p>
+          SafeGlance использует Google Mobile Ads SDK для AdMob, а UMP — для
+          согласия. Галерея работает без согласия, подключения к сети или
+          загруженной рекламы.
+        </p>
+        <p>Google Mobile Ads SDK может автоматически собирать и передавать Google:</p>
         <ul>
-          <li>идентификаторы медиафайлов и локальные URI;</li>
-          <li>статусы «избранное» и «скрытое»;</li>
-          <li>временные метки этих локальных настроек;</li>
+          <li>IP-адрес и примерное общее местоположение;</li>
+          <li>взаимодействия с приложением и рекламой;</li>
+          <li>диагностическую информацию; и</li>
+          <li>идентификаторы устройства и аккаунта.</li>
+        </ul>
+        <p>
+          Google может использовать эти данные для рекламы, аналитики, измерений,
+          предоставления сервисов и предотвращения мошенничества. В них не входят
+          локальные медиафайлы или приватные метаданные галереи. У eMilkyWay
+          Studio нет собственной системы аналитики.
+        </p>
+
+        <h2>6. Согласие, персонализация и настройки конфиденциальности</h2>
+        <p>
+          Персонализация зависит от согласия, региона, возрастной категории,
+          настроек аккаунта Google и устройства и закона. При запуске SafeGlance
+          обновляет согласие UMP и запрашивает рекламу только с его разрешения.
+          Неперсонализированная или ограниченная реклама всё равно может
+          использовать ограниченные данные для доставки, измерений, безопасности
+          и предотвращения мошенничества.
+        </p>
+        <p>
+          Когда UMP требует это, изменить или отозвать выбор можно через
+          <strong>Настройки → Конфиденциальность → Настройки конфиденциальности</strong>
+          в SafeGlance. Также доступны настройки рекламы Android и
+          <a href="https://myadcenter.google.com/">Google My Ad Center</a>.
+        </p>
+
+        <h2>7. Сведения Google и третьи лица</h2>
+        <p>Подробнее о правилах и настройках Google:</p>
+        <ul>
           <li>
-            настройки приложения: прохождение вступления, тема, язык и параметры
-            «Публичного показа».
+            <a href="https://policies.google.com/technologies/partner-sites?hl=ru"
+              >Как Google использует данные с сайтов и приложений, использующих
+              его сервисы</a
+            >;
+          </li>
+          <li>
+            <a href="https://policies.google.com/privacy?hl=ru"
+              >Политика конфиденциальности Google</a
+            >;
+          </li>
+          <li>
+            <a href="https://policies.google.com/technologies/ads?hl=ru"
+              >Реклама Google</a
+            >; и
+          </li>
+          <li>
+            <a href="https://myadcenter.google.com/">Google My Ad Center</a>.
           </li>
         </ul>
         <p>
-          Эти сведения остаются на устройстве и не отправляются разработчику или
-          третьим лицам.
+          Google обрабатывает рекламные данные по своим правилам. SafeGlance не
+          использует другие рекламные сети и не передаёт рекламодателям локальные
+          медиафайлы или приватные метаданные галереи.
         </p>
 
-        <h2>4. Отсутствие сбора, передачи, продажи и распространения данных</h2>
+        <h2>8. Безопасность</h2>
         <p>
-          SafeGlance не собирает и не передаёт персональные данные за пределы
-          устройства. В приложении нет серверной части, облачной синхронизации,
-          рекламных SDK, аналитических SDK, отслеживания и системы учётных
-          записей. Разработчик не продаёт и не передаёт данные пользователей.
+          SafeGlance хранит свои метаданные галереи во внутреннем хранилище
+          приложения. Данные Google Mobile Ads SDK и UMP шифруются при передаче с
+          помощью TLS. Ни один способ хранения или передачи не гарантирует
+          абсолютной безопасности.
         </p>
 
-        <h2>5. Биометрия и системные данные для разблокировки</h2>
+        <h2>9. Срок хранения и удаление</h2>
         <p>
-          SafeGlance может попросить Android подтвердить владельца устройства
-          перед открытием защищённого раздела или завершением «Публичного
-          показа». Проверку выполняет система Android с помощью поддерживаемой
-          биометрии или системного способа разблокировки: отпечатка пальца,
-          лица, PIN-кода, графического ключа либо пароля.
+          Очистка хранилища SafeGlance или удаление приложения удаляет избранное,
+          скрытые метаданные, тему, вступление, настройки «Публичного показа» и
+          локальное согласие, но не исходные фото и видео. Медиафайл удаляется
+          только по вашему выбору после подтверждения Android.
         </p>
         <p>
-          SafeGlance получает только результат проверки. Приложение не получает,
-          не читает, не хранит и не передаёт биометрические шаблоны, изображения
-          отпечатков или лица, PIN-коды, графические ключи и пароли устройства.
-        </p>
-
-        <h2>6. Разрешения Android</h2>
-        <p>
-          В зависимости от версии Android SafeGlance может запросить доступ ко
-          всем фотографиям, к выбранным фотографиям или к устаревшему внешнему
-          хранилищу. Разрешения используются только для функций галереи,
-          описанных в этой политике. Пользователь может отклонить или отозвать
-          разрешения в настройках Android.
+          Срок хранения рекламных данных определяется политиками Google, включая
+          страницу
+          <a href="https://policies.google.com/technologies/retention?hl=ru"
+            >Как Google хранит данные</a
+          >. Очистка SafeGlance не удаляет данные Google; используйте настройки
+          аккаунта Google, рекламы Android и My Ad Center.
         </p>
 
-        <h2>7. Скрытые фотографии</h2>
+        <h2>10. Дети и целевая аудитория</h2>
         <p>
-          Пометка фотографии как скрытой убирает её из обычных разделов
-          SafeGlance. Файл при этом не шифруется, не перемещается в закрытое
-          хранилище и не скрывается от других приложений или самой системы
-          Android.
-        </p>
-
-        <h2>8. Срок хранения и удаление данных</h2>
-        <p>
-          Локальные настройки и метаданные SafeGlance хранятся, пока
-          пользователь не очистит данные приложения или не удалит приложение.
-          Очистка данных или удаление SafeGlance удаляет эти локальные данные
-          приложения.
+          SafeGlance не предназначен для детей младше 13 лет. Заявленная в Google
+          Play Console целевая аудитория включает группы 13–15, 16–17 и 18 лет и
+          старше. Таким образом, приложение предназначено для подростков 13–17
+          лет и взрослых и не позиционируется как приложение исключительно для
+          совершеннолетних.
         </p>
         <p>
-          Очистка данных или удаление SafeGlance не удаляет исходные фотографии.
-          Фотография удаляется только после явного действия пользователя и
-          подтверждения системного запроса Android. В зависимости от версии
-          Android и устройства фотография сначала может быть перемещена в
-          системную корзину.
-        </p>
-
-        <h2>9. Безопасность</h2>
-        <p>
-          SafeGlance хранит собственные данные в хранилище приложения Android и
-          не передаёт фотографии или данные приложения через интернет.
-          Пользователь отвечает за безопасность своего устройства, аккаунта
-          Android, блокировки экрана, резервных копий и других приложений,
-          имеющих доступ к тем же фотографиям.
-        </p>
-
-        <h2>10. Конфиденциальность детей</h2>
-        <p>
-          SafeGlance является универсальным приложением-галереей и намеренно не
-          собирает персональные данные ни детей, ни взрослых.
+          Требования к рекламному согласию и возрастным ограничениям для
+          подростков зависят от страны и применимого возраста согласия.
+          Дополнительные меры защиты могут применяться на основании настроек
+          аккаунта Google, Family Link, устройства, UMP и издателя. SafeGlance
+          намеренно не использует локальные медиафайлы, приватные метаданные
+          галереи или биометрические данные для рекламы подросткам или взрослым.
+          Родитель или опекун может задать вопрос о конфиденциальности по адресу
+          ниже.
         </p>
 
         <h2>11. Изменения политики</h2>
         <p>
-          Политика может быть обновлена при изменении функций SafeGlance или
-          порядка обработки данных. Новая версия будет опубликована на этой
-          странице с обновлённой датой.
+          Политика может меняться вместе с функциями, обязательствами или
+          обработкой данных SafeGlance. Обновления появятся здесь с новой датой;
+          о существенных изменениях также может сообщаться в приложении или
+          магазине.
         </p>
 
         <h2>12. Контакты</h2>
         <p>
-          По вопросам конфиденциальности:
-          <a href="mailto:mirasayon.dev@gmail.com">mirasayon.dev@gmail.com</a>
+          По вопросам и запросам о конфиденциальности обращайтесь в eMilkyWay
+          Studio:
+          <a href="mailto:mirasayon.dev@gmail.com">mirasayon.dev@gmail.com</a>.
         </p>
       </section>
     </main>
